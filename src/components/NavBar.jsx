@@ -11,6 +11,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import { Avatar } from "@mui/material";
+import TextField from "@mui/material/TextField";
 
 export default function NavBar() {
   return (
@@ -56,6 +57,25 @@ export default function NavBar() {
                 <MenuItem value={30}>Option3</MenuItem>
               </Select>
             </FormControl>
+
+            <TextField
+              id='outlined-basic'
+              label='Search'
+              variant='outlined'
+              size='small'
+              sx={{
+                position: "absolute",
+                width: "718px",
+                height: "42px",
+                left: "523px",
+                top: "22px",
+                ".MuiOutlinedInput-root": {
+                  borderRadius: "10px",
+                },
+
+                // borderRadius: "10px",
+              }}
+            />
           </Box>
           <Avatar
             sx={{
