@@ -5,7 +5,7 @@ import Chip from "@mui/material/Chip";
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function BuisnessInfo() {
-  var arr = [];
+  let arr = [];
 
   const [labelInput, setLabelInput] = React.useState([]);
   const [showChip, setShowChip] = React.useState("");
@@ -37,9 +37,6 @@ export default function BuisnessInfo() {
   const handleDelete = () => {
     setShowChip("");
   };
-  console.log(showChipArr, "showChipArr");
-
-  console.log(labelInput, "arr");
 
   return (
     <Box sx={{ width: "100%", height: "100%" }}>
@@ -224,13 +221,13 @@ export default function BuisnessInfo() {
           fullWidth
           id='outlined-basic'
           variant='outlined'
-          placeholder='Add a link'
+          placeholder='Source Scheme'
         />
       </Box>
       <TextField
         sx={{
           height: "100%",
-          width: "30%",
+          width: "34%",
           //   display: "flex",
           alignItems: "center",
           mt: "1rem",
@@ -238,6 +235,7 @@ export default function BuisnessInfo() {
           //   justifyContent: "center",
         }}
         size='small'
+        placeholder='Technical Owner'
         fullWidth
         id='outlined-basic'
         variant='outlined'
